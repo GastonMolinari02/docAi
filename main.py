@@ -65,7 +65,7 @@ if uploaded_file is not None:
                 col2_1, col2_2 = st.columns(2)
 
                 with col2_1:
-                    st.write("### Gemini Response")
+                    st.write("### Parser DocAi Response")
                     for key, value in result['gemini_response'].items():
                         st.write(f"**{key}**: {value}")
 
