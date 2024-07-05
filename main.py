@@ -7,10 +7,10 @@ from google.auth.transport.requests import Request
 from google.oauth2.id_token import fetch_id_token
 
 # Configurar la variable de entorno en el script
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "C:\\Proyectos\\documenAi\\id_processing\\credentials.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "{Path de tu credential.json}"
 
 LOCAL = False  # Cambia a False cuando pruebes en la nube
-ENDPOINT_URL = "https://us-central1-workshop-genai-trainees-rbk.cloudfunctions.net/function-doc-ai"
+ENDPOINT_URL = "{Url de tu endpoint}"
 
 # Verifica la variable de entorno
 if 'GOOGLE_APPLICATION_CREDENTIALS' not in os.environ:
